@@ -52,7 +52,9 @@
     <child link="thumb_metacarpals_base1" />
     <axis xyz="0 0.034899 -0.99939" />
     <limit lower="-0.087266" upper="1.256637" effort="0.588" velocity="5.95" />
-  <dynamics damping="1.4e-05" friction="0.008" /></joint>
+    <!-- 同步最新右手参数：Cf≈5.42e-2, Cv≈2e-2 -->
+    <dynamics damping="0.02" friction="0.05416667" />
+  </joint>
   <link name="thumb_metacarpals">
     <inertial>
       <origin xyz="0.0076927091 -0.0859662185 0.0235283087" rpy="0 0 0" />
@@ -81,7 +83,9 @@
     <child link="thumb_metacarpals" />
     <axis xyz="1 0 0" />
     <limit lower="0" upper="0.837758" effort="1.008" velocity="3.47" />
-  <dynamics damping="1.4e-05" friction="0.008" /></joint>
+    <!-- 同步最新右手参数：Cf≈3.75e-2, Cv≈2e-2 -->
+    <dynamics damping="0.02" friction="0.0375" />
+  </joint>
   <link name="thumb_distal">
     <inertial>
       <origin xyz="0.0076927091 -0.0798662185 -0.0591716913" rpy="0 0 0" />
@@ -141,7 +145,9 @@
     <child link="index_proximal" />
     <axis xyz="0 1 0" />
     <limit lower="0" upper="1.134464" effort="0.574" velocity="6.10" />
-  <dynamics damping="1.4e-05" friction="0.008" /></joint>
+    <!-- 同步最新右手参数：Cf≈4.0e-2, Cv≈1e-2 -->
+    <dynamics damping="0.01" friction="0.04" />
+  </joint>
   <link name="index_distal">
     <inertial>
       <origin xyz="0.0134000000 -0.0022620000 0.0169920000" rpy="0 0 0" />
@@ -200,7 +206,9 @@
     <child link="middle_proximal" />
     <axis xyz="0 1 0" />
     <limit lower="0" upper="1.134464" effort="0.574" velocity="6.10" />
-  <dynamics damping="1.4e-05" friction="0.008" /></joint>
+    <!-- 同步最新右手参数：Cf≈2.71e-2, Cv≈1e-2 -->
+    <dynamics damping="0.01" friction="0.02708333" />
+  </joint>
   <link name="middle_distal">
     <inertial>
       <origin xyz="0.0134000000 -0.0022620000 0.0169920000" rpy="0 0 0" />
@@ -259,7 +267,9 @@
     <child link="ring_proximal" />
     <axis xyz="0 1 0" />
     <limit lower="0" upper="1.134464" effort="0.574" velocity="6.10" />
-  <dynamics damping="1.4e-05" friction="0.008" /></joint>
+    <!-- 同步最新右手参数：Cf≈2.29e-2, Cv≈1e-2 -->
+    <dynamics damping="0.01" friction="0.02291667" />
+  </joint>
   <link name="ring_distal">
     <inertial>
       <origin xyz="0.0134000000 -0.0022620000 0.0169920000" rpy="0 0 0" />
@@ -318,7 +328,9 @@
     <child link="pinky_proximal" />
     <axis xyz="0 1 0" />
     <limit lower="0" upper="1.134464" effort="0.574" velocity="6.10" />
-  <dynamics damping="1.4e-05" friction="0.008" /></joint>
+    <!-- 同步最新右手参数：Cf≈1.0e-2, Cv≈1e-2 -->
+    <dynamics damping="0.01" friction="0.01" />
+  </joint>
   <link name="pinky_distal">
     <inertial>
       <origin xyz="0.0134000000 -0.0022620000 0.0169920000" rpy="0 0 0" />
